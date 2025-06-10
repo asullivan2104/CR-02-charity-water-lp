@@ -25,11 +25,11 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  background-color: #1a1a1a;
+  font-family: 'Proxima Nova', Georgia;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #fff7e1;
 }
 
 /* Add a slight shadow and rounded corners to each section for depth */
