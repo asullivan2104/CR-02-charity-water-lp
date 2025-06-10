@@ -120,8 +120,8 @@ header span {
 /* Right side: background image */
 .hero-image {
   flex: 1;
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
-  /* Use your own image if you have it, or replace with the correct path */
+  /* Set the background image to the provided JPG */
+  background-image: url('impact-ethiopia.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
