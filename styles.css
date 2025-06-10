@@ -41,82 +41,102 @@ section {
   padding: 24px 16px;
 }
 
+/* Header: yellow bar at the top */
 header {
-  background-color: #fff7e1;
-  padding: 20px;
+  background-color: #fff7e1; /* Light yellow */
+  padding: 18px 24px;
   display: flex;
   align-items: center;
 }
 
+/* Logo in the header */
 header img {
   height: 24px;
   margin-right: 10px;
 }
 
+/* Site name in the header */
 header span {
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
+/* Hero section: two columns (text and image) */
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  min-height: 600px;
   background-color: #1a1a1a;
+  padding: 0;
+  margin: 0;
 }
 
+/* Left side: text and button */
 .hero-text {
-  flex: 1 1 50%;
-  padding: 60px 40px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
+/* Main headline */
 .hero-text h1 {
-  font-size: 36px;
+  color: #fff7e1;
+  font-size: 44px;
   font-weight: 700;
-  color: #fff7e1;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
+/* Subheadline */
 .hero-text p {
-  font-size: 20px;
   color: #fff7e1;
-  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 36px;
 }
 
+/* Call to action button */
 .hero-text button {
-  background-color: #ffc903;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 25px;
+  background-color: #ffc907;
   color: #1a1a1a;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  margin-top: 10px;
+  transition: background 0.2s;
 }
 
 .hero-text button:hover {
-  background-color: #ffc903;
+  background-color: #ffd84a;
 }
 
+/* Right side: background image */
 .hero-image {
-  flex: 1 1 50%;
-  background-image: url('4760_Ethiopia_2019_CG-.jpg');
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
+  /* Use your own image if you have it, or replace with the correct path */
   background-size: cover;
   background-position: center;
-  height: 500px;
+  min-height: 500px;
 }
 
+/* Footer message */
 .footer {
   background-color: #1a1a1a;
   color: #fff7e1;
   text-align: center;
-  padding: 20px;
-  font-size: 16px;
+  padding: 28px 10px 24px 10px;
+  font-size: 18px;
+  margin-top: 0;
 }
+
 /* 
   Media Queries for Responsive Design
   Media queries help make your website look good on different screen sizes,
@@ -175,5 +195,30 @@ header span {
 
   .impact-image {
     width: 300px;
+  }
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .hero-image {
+    min-height: 250px;
+    height: 220px;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-text {
+    padding: 32px 8px;
+  }
+  .footer {
+    font-size: 15px;
+    padding: 18px 5px 16px 5px;
   }
 }
