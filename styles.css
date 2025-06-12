@@ -119,22 +119,22 @@ header span {
 
 /* Right side: background image */
 .hero-image {
-  flex: 1;
-  /* Set the background image to the provided JPG */
+  width: 50vw; /* 50% of viewport width */
+  height: 100vh; /* full viewport height */
   background-image: url('picture.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 500px;
 }
 
-/* Footer message */
-.footer {
-  background-color: #1a1a1a;
-  color: #fff7e1;
-  text-align: center;
-  padding: 28px 10px 24px 10px;
-  font-size: 18px;
-  margin-top: 0;
+
+#foot{
+ font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  text-align: left;
+  padding-bottom: 0px;
 }
 
 /* 
