@@ -121,7 +121,7 @@ header span {
 .hero-image {
   flex: 1;
   /* Set the background image to the provided JPG */
-  background-image: url('impact-ethiopia.jpg');
+  background-image: url('picture.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
